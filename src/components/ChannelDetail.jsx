@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { Box, Stack, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 
-import { Videos, ChannelCard, VideoCard } from "./index";
+import { Videos, ChannelCard } from "./index";
 import { FetchFromApi } from "../utils/FetchFromApi";
 
 const ChannelDetail = () => {
@@ -34,10 +34,10 @@ const ChannelDetail = () => {
             height: "30vh",
           }}
         />
-        <ChannelCard channelDetail={ChannelDetails} marginTop={'-93px'} />
-        <Box display='flex' p='1% 0% 1% 3%' >
-          <Box sx={{mr: {sm:'100px'}}}>
-            <Videos videos={videos}/>
+        <ChannelCard channelDetail={ChannelDetails} marginTop={"-93px"} />
+        <Box display="flex" p="1% 0% 1% 3%">
+          <Box sx={{ mr: { sm: "100px" } }}>
+            <Videos videos={videos} />
           </Box>
         </Box>
       </Box>
