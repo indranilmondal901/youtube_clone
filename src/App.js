@@ -11,6 +11,9 @@ import {
   SearchFeed,
 } from "./components";
 
+// console.log('Process env:', process.env);
+// console.log('RAPID_API_KEY:', process.env.REACT_APP_RAPID_API_KEY);
+
 function App() {
   return (
     <BrowserRouter>
